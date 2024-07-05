@@ -11,8 +11,8 @@
     <groupId>com.israelmerlyn</groupId>
     <artifactId>Sistemas_RH</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Sistemas_RH</name>
-    <description>Sistemas_RH</description>
+    <name>Sistemas_RH_Backend</name>
+    <description>Sistemas_RH_Backend</description>
     <url/>
     <licenses>
         <license/>
