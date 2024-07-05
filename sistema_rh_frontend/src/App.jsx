@@ -2,7 +2,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Sistemas de RH</h1>
+        <h3 className="">Sistemas de RH</h3>
       </div>
     </>
   );
