@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div>
+      <div className="container text-center">
         <h3 className="">Sistemas de RH</h3>
       </div>
     </>
