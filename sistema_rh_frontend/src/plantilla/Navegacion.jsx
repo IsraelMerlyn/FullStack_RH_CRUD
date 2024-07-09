@@ -3,7 +3,7 @@ import React from 'react'
 export default function Navegacion() {
   return (
     <>
-    <div classNameName="container">
+    <div className="container">
 
     <ul className="nav justify-content-end navbar-dark bg-primary">
   <li className="nav-item">
