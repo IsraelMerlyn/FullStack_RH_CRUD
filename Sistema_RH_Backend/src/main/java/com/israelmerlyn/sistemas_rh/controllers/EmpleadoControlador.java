@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("rh-app")
 //http://localhost:8080/rh-app/empleados/1
-@CrossOrigin(value = "http://localhost:3000") //incicando URL para recibir pediticiones (SI NO SON RECHAZADAS)
+@CrossOrigin(value = "http://localhost:5173") //incicando URL para recibir pediticiones (SI NO SON RECHAZADAS)
 
 public class EmpleadoControlador {
     private  static  final Logger logger = LoggerFactory.getLogger(EmpleadoControlador.class);

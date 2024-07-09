@@ -1,4 +1,28 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { NumericFormat } from "react-number-format";
+
 export default function ListadoEmpleado() {
+
+  const URLBase = "http://localhost:8080/rh-app/empleados";
+  const [empleados, setEmpleados] = useState([]);
+
+  useEffect(() => {
+    
+    cargarEmpleados();
+
+  
+  }, []);
+
+  const cargarEmpleados = async() => {
+    const resultado = await axios.get(URLBase);
+    console.log("Resultados de cargar empleados");
+    console.log(resultado.data);
+    setEmpleados(resultado.data);
+  } 
+  
+
+
   return (
     <>
       <div className="container">
@@ -13,22 +37,33 @@ export default function ListadoEmpleado() {
                 <th scope="col">Nombre</th>
                 <th scope="col">Departamento</th>
                 <th scope="col">Sueldo</th>
-                <th scope="col"></th>
+                <th scope="col">Opciones</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+
+              {
+                empleados.map((empleado, indice) => (
+              <tr key={indice}>
+                <th scope="row">{empleado.idEmpleado}</th>
+                <td>{empleado.nombre}</td>
+                <td>{empleado.departamento}</td>
+                
+                <td>
+                  <NumericFormat value = {empleado.sueldo}
+                  displayType="text"
+                  thousandSeparator=','
+                  prefix={'$'}
+                  decimalScale={2}
+                  fixedDecimalScale
+                  />
+                  
+                  </td>
+                <td></td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
+                ))
+              
+              }
             </tbody>
           </table>
         </div>
