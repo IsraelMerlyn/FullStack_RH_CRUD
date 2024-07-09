@@ -29,6 +29,13 @@ public class EmpleadoControlador {
         return empleados;
     }
 
+    @PostMapping("/empleados")
+    public  Empleado AgregarEmpleado(@RequestBody Empleado empleado){
+        logger.info("Empleado a Agregar " + empleado);
+        return empleadoServicio.guardarEmpleado(empleado);
+
+    }
+
     @PutMapping
     public Empleado guardarEmpleado(@RequestBody Empleado empleado) {
         return empleadoServicio.guardarEmpleado(empleado);
