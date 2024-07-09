@@ -15,9 +15,7 @@ export default function Navegacion() {
   <li className="nav-item">
     <Link className="nav-link text-black" to="/agregar">Agregar</Link>
   </li>
-  <li className="nav-item">
-    <Link className="nav-link text-black" to="/listar">Listar</Link>
-  </li>
+  
  
 </ul>
     </div>
