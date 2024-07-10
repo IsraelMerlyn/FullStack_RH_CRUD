@@ -1,6 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navegacion() {
+
+  
   return (
     <>
     <div className="container">
@@ -10,11 +13,9 @@ export default function Navegacion() {
     <a className="nav-link active text-black" aria-current="page"  href="/">Inicio</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link text-black" href="/agregar">Agregar</a>
+    <Link className="nav-link text-black" to="/agregar">Agregar</Link>
   </li>
-  <li className="nav-item">
-    <a className="nav-link text-black" href="/listar">Listar</a>
-  </li>
+  
  
 </ul>
     </div>
