@@ -38,4 +38,4 @@
 ![alt](https://github.com/IsraelMerlyn/FullStack_RH_CRUD/blob/master/Img_proyecto/modal_actualizar.png)
 
 
-![alt](https://github.com/IsraelMerlyn/FullStack_RH_CRUD/blob/master/Img_proyecto/modal_actualizar.pnghttps://github.com/IsraelMerlyn/FullStack_RH_CRUD/blob/master/Img_proyecto/modal_eliminar.png)
+![alt](https://github.comIsraelMerlyn/FullStack_RH_CRUD/blob/master/Img_proyecto/modal_eliminar.png)
