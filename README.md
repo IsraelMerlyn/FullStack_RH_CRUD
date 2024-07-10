@@ -11,7 +11,7 @@
 
   <h4 align="center">:construction: Proyecto en construcción :construction:  </h4>
 
-![](https://github.com/IsraelMerlyn/tareasCliente/blob/israel/tareas/src/main/resources/assets/img/funcionamiento.png)
+
 ## :hammer:Funcionalidades del proyecto
 
 - `Funcionalidad 1`: _Integracion FrontEnd / BackEnd_
