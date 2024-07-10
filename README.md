@@ -1,5 +1,5 @@
 # <h1 align="center"> API REST de Tareas </h1>
-**_`Proyecto tiene su carpeta Frontend y Backend, Desarrollado con Angular 16 y SpringBoot JDK 17.`_**
+**_`Proyecto tiene su carpeta Frontend y Backend, Desarrollado con React 16 y SpringBoot JDK 17.`_**
 
 
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
@@ -38,4 +38,4 @@
 ![alt](https://github.com/IsraelMerlyn/FullStack_RH_CRUD/blob/master/Img_proyecto/modal_actualizar.png)
 
 
-![alt](https://github.comIsraelMerlyn/FullStack_RH_CRUD/blob/master/Img_proyecto/modal_eliminar.png)
+![alt](https://github.com/IsraelMerlyn/FullStack_RH_CRUD/blob/master/Img_proyecto/modal_eliminar.png)
