@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
-
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.css";
 export default function EditarEmpleado() {
 
     const URLBase = "http://localhost:8080/rh-app/empleados";
@@ -39,9 +40,23 @@ export default function EditarEmpleado() {
     const onSubmit = async(e) => {
         e.preventDefault();
         // const URLBase = "http://localhost:8080/rh-app/empleados";
-        await axios.post(URLBase, empleado);
-        //Redirigimos a la pagina de Inicio
-        navegaciion('/');
+        Swal.fire({
+            title: "Estas seguro que deseas actualizar el Registro?",
+            text: "el registro se actualizara permanente!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Si,  actualizar!",
+            cancelButtonText: "cancelar",
+      
+      }).then(async (result) => {
+              if (result.isConfirmed) {
+                Swal.fire("Actualizado!", "Registro actualizo con exito", "success");
+                await axios.post(URLBase, empleado);
+              }
+              navegaciion('/');
+            });
 
     }
   return (
