@@ -36,6 +36,24 @@ export default function EditarEmpleado() {
 
     }
 
+     // const onDelete = () => {
+  //   Swal.fire({
+  //     title: "Estas seguro que deseas elimnar?",
+  //     text: "el registro se eliminara permanente!",
+  //     icon: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonColor: "#3085d6",
+  //     cancelButtonColor: "#d33",
+  //     confirmButtonText: "Si, eliminar!",
+  //     cancelButtonText: "cancelar",
+  //   }).then((result) => {
+  //     if (result.isConfirmed) {
+  //       Swal.fire("Eliminado!", "Registro eliminado con exito", "success");
+  //       dispatch(startDeletingNote());
+  //     }
+  //   });
+  // };
+
     const onSubmit = async(e) => {
         e.preventDefault();
         // const URLBase = "http://localhost:8080/rh-app/empleados";
@@ -44,6 +62,9 @@ export default function EditarEmpleado() {
         navegaciion('/');
 
     }
+
+
+
   return (
    <>
    <div className="container">
